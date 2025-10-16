@@ -1,225 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-  </head>
 
-  <body>
-    <!-- Menú -->
-    <nav class="navbar navbar-expand-sm bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img
-            src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png"
-            alt="Logo"
-            width="30"
-            height="24"
-            class="d-inline-block align-text-top"
-          />
-          Navbar</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown link
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+</head>
 
-    <!-- Carrusel -->
-    <div id="carouselExampleIndicators" class="carousel slide">
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active" style="max-height: 700px">
-          <img src="./img/chow.jpg" class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item" style="max-height: 700px">
-          <img src="./img/pincher.jpg" class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item" style="max-height: 700px">
-          <img src="./img/shitzu.jpg" class="d-block w-100" alt="..." />
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+<body>
+  <!-- Menú -->
+  <nav class="navbar navbar-expand-sm bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="Logo" width="30"
+          height="24" class="d-inline-block align-text-top" />
+        Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown link
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carrusel -->
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="max-height: 700px">
+        <img src="./img/chow.jpg" class="d-block w-100" alt="..." />
+      </div>
+      <div class="carousel-item" style="max-height: 700px">
+        <img src="./img/pincher.jpg" class="d-block w-100" alt="..." />
+      </div>
+      <div class="carousel-item" style="max-height: 700px">
+        <img src="./img/shitzu.jpg" class="d-block w-100" alt="..." />
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- PseudoCarrusel -->
+  <div class="container-fluid bg-primary-subtle py-5 text-center">
+    <div class="row justify-content-between px-5">
+      <div class="col-8 col-sm-4 col-md-3 col-lg-1">
+        <img src="./img/marcas/clients-1.webp" class="img-fluid" style="max-width: 80px" alt="..." />
+      </div>
+      <div class="col-8 col-sm-4 col-md-3 col-lg-1">
+        <img src="./img/marcas/clients-2.webp" class="img-fluid" style="max-width: 80px" alt="..." />
+      </div>
+      <div class="col-8 col-sm-4 col-md-3 col-lg-1">
+        <img src="./img/marcas/clients-3.webp" class="img-fluid" style="max-width: 80px" alt="..." />
+      </div>
+      <div class="col-8 col-sm-4 col-md-3 col-lg-1">
+        <img src="./img/marcas/clients-4.webp" class="img-fluid" style="max-width: 80px" alt="..." />
+      </div>
+      <div class="col-8 col-sm-4 col-md-3 col-lg-1">
+        <img src="./img/marcas/clients-5.webp" class="img-fluid" style="max-width: 80px" alt="..." />
+      </div>
+      <div class="col-8 col-sm-4 col-md-3 col-lg-1">
+        <img src="./img/marcas/clients-6.webp" class="img-fluid" style="max-width: 80px" alt="..." />
+      </div>
+      <div class="col-8 col-sm-4 col-md-3 col-lg-1">
+        <img src="./img/marcas/clients-7.webp" class="img-fluid" style="max-width: 80px" alt="..." />
+      </div>
+      <div class="col-8 col-sm-4 col-md-3 col-lg-1">
+        <img src="./img/marcas/clients-8.webp" class="img-fluid" style="max-width: 80px" alt="..." />
+      </div>
+    </div>
+  </div>
+
+  <!-- Acerca de -->
+
+  <div class="container mt-5">
+    <h2 class="text-center">ACERCA DE</h2>
+    <div class="row">
+      <div class="col">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quidem,
+        molestias error ipsam odit corporis nobis eaque provident velit
+        accusantium voluptatem iusto quaerat aut quibusdam nesciunt!
+        Consectetur id iure deserunt.
+      </div>
+      <div class="col">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quidem,
+        molestias error ipsam odit corporis nobis eaque provident velit
+        accusantium voluptatem iusto quaerat aut quibusdam nesciunt!
+        Consectetur id iure deserunt.
+      </div>
+      <button type="button" class="btn btn-outline-primary my-3" disabled>
+        Primary Button
       </button>
     </div>
+  </div>
 
+  <!-- Tarjetas -->
 
-<!-- PseudoCarrusel -->
-<div class="container-fluid bg-primary-subtle py-5 text-center">
-  <div class="row justify-content-between  px-5 ">
-    <div class="col-8 col-sm-4 col-md-3 col-lg-1">
-      <img src="./img/marcas/clients-1.webp" class="img-fluid" style="max-width: 80px" alt="..." />
+  <div class="container my-4 d-md-block">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+          <img src="./img/chow.jpg" class="card-im-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-titlle">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and maje up
+              the bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+          <img src="./img/pincher.jpg" class="card-im-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-titlle">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and maje up
+              the bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+          <img src="./img/shitzu.jpg" class="card-im-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-titlle">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and maje up
+              the bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col-8 col-sm-4 col-md-3 col-lg-1">
-      <img src="./img/marcas/clients-2.webp" class="img-fluid" style="max-width: 80px" alt="..." />
+  </div>
+
+  <!-- TARJETA HORIZONTAL -->
+<div class="container my-4">
+  <div class="row g-0">
+    <!-- Imagen de la tarjeta (más pequeña) -->
+    <div class="col-md-4">
+      <img src="./img/golden.jpg" class="img-fluid rounded-start" alt="Golden Retriever" />
     </div>
-    <div class="col-8 col-sm-4 col-md-3 col-lg-1">
-      <img src="./img/marcas/clients-3.webp" class="img-fluid" style="max-width: 80px" alt="..." />
-    </div>
-    <div class="col-8 col-sm-4 col-md-3 col-lg-1">
-      <img src="./img/marcas/clients-4.webp" class="img-fluid" style="max-width: 80px" alt="..." />
-    </div>
-    <div class="col-8 col-sm-4 col-md-3 col-lg-1">
-      <img src="./img/marcas/clients-5.webp" class="img-fluid" style="max-width: 80px" alt="..." />
-    </div>
-    <div class="col-8 col-sm-4 col-md-3 col-lg-1">
-      <img src="./img/marcas/clients-6.webp" class="img-fluid" style="max-width: 80px" alt="..." />
-    </div>
-    <div class="col-8 col-sm-4 col-md-3 col-lg-1">
-      <img src="./img/marcas/clients-7.webp" class="img-fluid" style="max-width: 80px" alt="..." />
-    </div>
-    <div class="col-8 col-sm-4 col-md-3 col-lg-1">
-      <img src="./img/marcas/clients-8.webp" class="img-fluid" style="max-width: 80px" alt="..." />
+
+    <!-- Contenido de la tarjeta (centrado verticalmente) -->
+    <div class="col-md-8 d-flex align-items-center">
+      <div class="card-body text-start px-4 py-3">
+        <h2 class="card-title">Golden Retriever</h2>
+        <p class="card-text">
+          El Golden Retriever es un perro amistoso, dócil y muy sociable, ideal para familias y niños. Tiene una gran disposición para aprender, 
+          lo que lo hace fácil de entrenar. Disfruta de la compañía humana, necesita ejercicio diario y se adapta bien tanto en entornos urbanos como rurales.
+        </p>
+
+        <!-- Botón "Saber más" -->
+        <div class="text-center">
+          <a href="#" class="btn btn-primary btn-lg">SABER MÁS</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
+<!--Tarjeta Horizontal 2 -->
+<div class="container my-4">
+  <div class="row g-0">
+    <!-- Contenido de la tarjeta  -->
+    <div class="col-md-8 d-flex align-items-center">
+      <div class="card-body  text-start px-4 py-3">
+        <h2 class="card-title">Golden Retriever</h2>
+        <p class="card-text">
+          El Pastor Alemán es una raza inteligente, leal y protectora, frecuentemente utilizada en labores policiales y de rescate. Es obediente, enérgico y
+           necesita ejercicio físico y mental regular. Forma fuertes lazos con su familia y requiere socialización desde cachorro para un buen equilibrio.
+        </p>
 
-<!-- Acerca de -->
-
-
-<div class = "container mt-5">
-    <h2 class = "text-center"> ACERCA DE</h2>
-    <div class = "row">
-        <div class = "col"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quidem, molestias error 
-            ipsam odit corporis nobis eaque provident velit accusantium voluptatem iusto quaerat aut quibusdam nesciunt! 
-            Consectetur id iure deserunt.</div>
-            <div class = "col"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quidem, molestias error 
-            ipsam odit corporis nobis eaque provident velit accusantium voluptatem iusto quaerat aut quibusdam nesciunt! 
-            Consectetur id iure deserunt.</div>
-            <button type = "button" class = "btn btn-outline-primary my-3" disabled>Primary Button</button>
+        <!-- Botón "Saber más" centrado -->
+        <div class="text-center">
+          <a href="#" class="btn btn-primary btn-lg">SABER MÁS</a>
+        </div>
+      </div>
     </div>
+
+    <!-- Imagen de la tarjeta (más pequeña) -->
+    <div class="col-md-4">
+      <img src="./img/aleman.jpg" class="img-fluid rounded-start" alt="Golden Retriever" />
+    </div>
+  </div>
 </div>
 
-
-<!-- Tarjetas -->
-
-
-<div class = "container my-4">
+<footer>
+  <div class = "container-fluid bg-primary-subtle p-5 text-center">
     <div class = "row">
-        <div class = "col-lg-4 col-md-6 col-sm-12">
-            <div class = "card">
-                <img src = "./img/chow.jpg" class = "card-im-top " alt="...">
-                <div class = "card-body">
-                    <h5 class = "card-titlle">Card title</h5>
-                    <p class = "card-text">Some quick example text to build on the card title and maje up the bulk of the card's content.</p>
-                    <a href = "#" class ="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-
-        <div class = "col-lg-4 col-md-6 col-sm-12">
-            <div class = "card">
-                <img src = "./img/pincher.jpg" class = "card-im-top" alt="...">
-                <div class = "card-body">
-                    <h5 class = "card-titlle">Card title</h5>
-                    <p class = "card-text">Some quick example text to build on the card title and maje up the bulk of the card's content.</p>
-                    <a href = "#" class ="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-
-        <div class = "col-lg-4 col-md-6 col-sm-12">
-            <div class = "card">
-                <img src = "./img/shitzu.jpg" class = "card-im-top" alt="...">
-                <div class = "card-body">
-                    <h5 class = "card-titlle">Card title</h5>
-                    <p class = "card-text">Some quick example text to build on the card title and maje up the bulk of the card's content.</p>
-                    <a href = "#" class ="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
+<div class = "col"> <a href = "#" class = "text-decoration-none text-dark"> ADOPTA</a></div>
+<div class = "col"> <a href = "#" class = "text-decoration-none text-dark"> SEDES</a></div>
+<div class = "col"> <a href = "#" class = "text-decoration-none text-dark"> FOTOS</a></div>      
+<div class = "col"> <a href = "#" class = "text-decoration-none text-dark"> CONTACTO</a></div>
     </div>
-</div>
+  </div>
+</footer>
 
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
