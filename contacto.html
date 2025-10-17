@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contáctanos - Adopta tu Mascota</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+</head>
+
+<body class="d-flex flex-column min-vh-100 bg-light">
+  <!-- NavBar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="index.html">🐾 Huellitas Felices</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="disponibles.html">Disponibles</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link active fw-semibold text-primary" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Formulario -->
+  <div class="container py-5">
+    <div class="text-center mb-4">
+      <h2 class="fw-bold text-primary">
+        <i class="bi bi-envelope-fill me-2"></i>Contáctanos
+      </h2>
+      <p class="text-muted">¿Tienes dudas o quieres adoptar? Escríbenos y te responderemos con gusto.</p>
+    </div>
+
+    <div class="card shadow-lg border-0 rounded-4">
+      <div class="card-body p-5">
+        <form>
+          <div class="row g-4">
+            <!-- Columna izquierda -->
+            <div class="col-12 col-md-6">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="inputNombre" placeholder="Nombre" required>
+                <label for="inputNombre">Nombre</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Correo" required>
+                <label for="inputEmail">Correo Electrónico</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="tel" class="form-control" id="inputTelefono" placeholder="Teléfono" required>
+                <label for="inputTelefono">Teléfono</label>
+              </div>
+            </div>
+
+            <!-- Columna derecha -->
+            <div class="col-12 col-md-6">
+              <div class="form-floating">
+                <textarea class="form-control" placeholder=" " id="floatingTextarea2" rows="6" required></textarea>
+                <label for="floatingTextarea2">Comentarios</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botón -->
+          <div class="text-center mt-4">
+            <button type="submit" class="btn btn-primary px-5 py-2 shadow-sm">
+              <i class="bi bi-send-fill me-2"></i>Enviar
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-primary-subtle text-dark text-center mt-auto py-4">
+    <p class="mb-0">© 2025 Huellitas Felices | Todos los derechos reservados 🐾</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

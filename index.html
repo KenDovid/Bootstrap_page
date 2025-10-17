@@ -1,49 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <title>Inicio - Adopta tu Mascota</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <style>
+    .carousel-item img {
+      height: 70vh;
+      object-fit: cover;
+    }
+  </style>
 </head>
 
-<body>
-  <!-- Menú -->
-  <nav class="navbar navbar-expand-sm bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <i class="bi bi-clipboard2-heart-fill"></i>
-        ADOPTA TU MASCOTA</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="index.html">🐾 Huellitas Felices</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Disponinles</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Nosotros</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Ver más
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Horarios</a></li>
-              <li><a class="dropdown-item" href="#">Dirección</a></li>
-              <li>
-                <a class="dropdown-item" href="#">Contáctanos</a>
-              </li>
-            </ul>
-          </li>
+          <li class="nav-item"><a class="nav-link active fw-semibold text-primary" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="disponibles.html">Disponibles</a></li>
+          <li class="nav-item"><a class="nav-link " href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
         </ul>
       </div>
     </div>
@@ -60,199 +46,141 @@
         aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
-      <div class="carousel-item active" style="max-height: 700px">
-        <img src="./img/chow.jpg" class="d-block w-100" alt="..." />
+      <div class="carousel-item active">
+        <img src="./img/chow.jpg" class="d-block w-100" alt="Chow Chow">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
+          <h2 class="fw-bold">Dales un hogar, ellos te darán amor ❤️</h2>
+        </div>
       </div>
-      <div class="carousel-item" style="max-height: 700px">
-        <img src="./img/pincher.jpg" class="d-block w-100" alt="..." />
+      <div class="carousel-item">
+        <img src="./img/pincher.jpg" class="d-block w-100" alt="Pinscher Mini">
       </div>
-      <div class="carousel-item" style="max-height: 700px">
-        <img src="./img/shitzu.jpg" class="d-block w-100" alt="..." />
+      <div class="carousel-item">
+        <img src="./img/shitzu.jpg" class="d-block w-100" alt="Shih Tzu">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
       data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
+      <span class="carousel-control-prev-icon"></span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
       data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
+      <span class="carousel-control-next-icon"></span>
     </button>
   </div>
 
-  <!-- PseudoCarrusel -->
-  <div class="container-fluid bg-primary-subtle py-5 text-center">
-    <div class="row justify-content-between px-5">
-      <div class="col-8 col-sm-4 col-md-3 col-lg-1">
-        <img src="./img/marcas/clients-1.webp" class="img-fluid" style="max-width: 80px" alt="..." />
+  <!-- Marcas -->
+  <section class="container-fluid bg-primary-subtle py-5 text-center">
+    <div class="row justify-content-center align-items-center gap-4">
+      <div class="col-auto"><img src="./img/marcas/clients-1.webp" class="img-fluid opacity-75" width="100" alt="">
       </div>
-      <div class="col-8 col-sm-4 col-md-3 col-lg-1">
-        <img src="./img/marcas/clients-2.webp" class="img-fluid" style="max-width: 80px" alt="..." />
+      <div class="col-auto"><img src="./img/marcas/clients-2.webp" class="img-fluid opacity-75" width="100" alt="">
       </div>
-      <div class="col-8 col-sm-4 col-md-3 col-lg-1">
-        <img src="./img/marcas/clients-3.webp" class="img-fluid" style="max-width: 80px" alt="..." />
+      <div class="col-auto"><img src="./img/marcas/clients-3.webp" class="img-fluid opacity-75" width="100" alt="">
       </div>
-      <div class="col-8 col-sm-4 col-md-3 col-lg-1">
-        <img src="./img/marcas/clients-4.webp" class="img-fluid" style="max-width: 80px" alt="..." />
+      <div class="col-auto"><img src="./img/marcas/clients-4.webp" class="img-fluid opacity-75" width="100" alt="">
       </div>
-      <div class="col-8 col-sm-4 col-md-3 col-lg-1">
-        <img src="./img/marcas/clients-5.webp" class="img-fluid" style="max-width: 80px" alt="..." />
-      </div>
-      <div class="col-8 col-sm-4 col-md-3 col-lg-1">
-        <img src="./img/marcas/clients-6.webp" class="img-fluid" style="max-width: 80px" alt="..." />
-      </div>
-      <div class="col-8 col-sm-4 col-md-3 col-lg-1">
-        <img src="./img/marcas/clients-7.webp" class="img-fluid" style="max-width: 80px" alt="..." />
-      </div>
-      <div class="col-8 col-sm-4 col-md-3 col-lg-1">
-        <img src="./img/marcas/clients-8.webp" class="img-fluid" style="max-width: 80px" alt="..." />
+      <div class="col-auto"><img src="./img/marcas/clients-5.webp" class="img-fluid opacity-75" width="100" alt="">
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- Acerca de -->
-
-  <div class="container mt-5">
-    <h2 class="text-center">ACERCA DE</h2>
+  <section class="container my-5">
+    <h2 class="text-center fw-bold mb-4 text-primary">Acerca de Nosotros</h2>
     <div class="row">
-      <div class="col">
-        Encuentra a tu nuevo mejor amigo en nuestra página de adopción de mascotas.
-        Conecta con perros y gatos que buscan un hogar lleno de amor y cuidados. Cada perfil tiene fotos, edad y
-        personalidad.
+      <div class="col-md-6 mb-3">
+        <p>Encuentra a tu nuevo mejor amigo. Conecta con perros y gatos que buscan un hogar lleno de amor y cuidados.
+          Cada perfil tiene fotos, edad y personalidad.</p>
       </div>
-      <div class="col">
-        Nuestra misión es darles una segunda oportunidad a cientos de animales. Adopta fácil,
-        seguro y con el apoyo de refugios confiables. ¡Haz la diferencia en la vida de una mascota hoy!
+      <div class="col-md-6 mb-3">
+        <p>Nuestra misión es darles una segunda oportunidad a cientos de animales. Adopta fácil, seguro y con el apoyo
+          de refugios confiables. ¡Haz la diferencia hoy!</p>
       </div>
-      <button type="button" class="btn btn-outline-primary my-3" disabled>
-        Ver animalitos
-      </button>
     </div>
-  </div>
+    <div class="text-center">
+      <button class="btn btn-primary px-4"><i class="bi bi-heart-fill me-2"></i>Ver animalitos</button>
+    </div>
+  </section>
 
   <!-- Tarjetas -->
-
-  <div class="container my-4 d-md-block ">
-    <div class="row">
-      <div class="col-lg-4 col-md-6 col-sm-12 my-4">
-        <div class="card">
-          <img src="./img/chow.jpg" class="card-im-top" alt="..." />
+  <section class="container my-5">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="card shadow-sm rounded-4">
+          <img src="./img/chow.jpg" class="card-img-top" alt="Chow Chow">
           <div class="card-body">
             <h5 class="card-title">Max – Chow Chow</h5>
-            <p class="card-text">
-              Max es un perro tranquilo y leal. Tiene 3 años y está vacunado, esterilizado y listo para un hogar
-              amoroso.
-            </p>
-            <div class="text-center">
-              <a href="#" class="btn btn-primary  mt-4">Adoptar a Max</a>
-            </div>
+            <p class="card-text text-muted">Max es un perro tranquilo y leal. Tiene 3 años y está vacunado, esterilizado
+              y listo para un hogar amoroso.</p>
+            <div class="text-center"><a href="#" class="btn btn-primary">Adoptar a Max</a></div>
           </div>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 col-sm-12 my-4">
-        <div class="card">
-          <img src="./img/pincher.jpg" class="card-im-top" alt="..." />
+      <div class="col-lg-4 col-md-6">
+        <div class="card shadow-sm rounded-4">
+          <img src="./img/pincher.jpg" class="card-img-top" alt="Pinscher Mini">
           <div class="card-body">
             <h5 class="card-title">Luna – Pinscher Mini</h5>
-            <p class="card-text">
-              Luna es juguetona y muy cariñosa. Tiene 1 año y es ideal para espacios pequeños. ¡Necesita un hogar ya!
-            </p>
-            <div class="text-center">
-              <a href="#" class="btn btn-primary mt-4">Adoptar a Luna</a>
-            </div>
+            <p class="card-text text-muted">Luna es juguetona y muy cariñosa. Tiene 1 año y es ideal para espacios
+              pequeños. ¡Necesita un hogar ya!</p>
+            <div class="text-center"><a href="#" class="btn btn-primary">Adoptar a Luna</a></div>
           </div>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 col-sm-12 my-4">
-        <div class="card">
-          <img src="./img/shitzu.jpg" class="card-im-top" alt="..." />
+      <div class="col-lg-4 col-md-6">
+        <div class="card shadow-sm rounded-4">
+          <img src="./img/shitzu.jpg" class="card-img-top" alt="Shih Tzu">
           <div class="card-body">
             <h5 class="card-title">Toby – Shih Tzu</h5>
-            <p class="card-text">
-              Toby es sociable, ama a los niños y se lleva bien con otros perros. Tiene 2 años y busca una familia.
-            </p>
-            <div class="text-center">
-              <a href="#" class="btn btn-primary mt-4">Adoptar a Toby</a>
-            </div>
+            <p class="card-text text-muted">Toby es sociable, ama a los niños y se lleva bien con otros perros. Tiene 2
+              años y busca una familia.</p>
+            <div class="text-center"><a href="#" class="btn btn-primary">Adoptar a Toby</a></div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- TARJETA HORIZONTAL -->
-  <div class="container my-4">
-    <div class="row g-0">
-      <!-- Imagen de la tarjeta (más pequeña) -->
+  <!-- Tarjetas horizontales -->
+  <section class="container my-5">
+    <div class="row g-0 shadow rounded-4 overflow-hidden mb-4">
       <div class="col-md-4">
-        <img src="./img/golden.jpg" class="img-fluid rounded-start" alt="Golden Retriever" />
+        <img src="./img/golden.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Golden Retriever">
       </div>
-
-      <!-- Contenido de la tarjeta (centrado verticalmente) -->
       <div class="col-md-8 d-flex align-items-center">
-        <div class="card-body text-start px-4 py-3">
-          <h2 class="card-title my-3"> Simba</h2>
-          <p class="card-text">
-            Simba es un perro juguetón, curioso y muy cariñoso, ideal para convivir con niños y otros animales. Le encanta correr, explorar y estar en compañía. 
-            Es muy obediente, aprende rápido y siempre está listo para dar cariño. Necesita paseos diarios y mucho amor para estar feliz.
-          </p>
-
-          <!-- Botón "Saber más" -->
-          <div class="text-center">
-            <a href="#" class="btn btn-primary btn-lg">Adoptar a Simba</a>
-          </div>
+        <div class="card-body px-4 py-3">
+          <h2 class="card-title">Simba</h2>
+          <p class="card-text text-muted">Simba es juguetón, curioso y muy cariñoso. Ideal para convivir con niños y
+            otros animales. Necesita paseos diarios y mucho amor.</p>
+          <div class="text-center"><a href="#" class="btn btn-primary btn-lg">Adoptar a Simba</a></div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!--Tarjeta Horizontal 2 -->
-  <div class="container my-4">
-    <div class="row g-0">
-      <!-- Contenido de la tarjeta  -->
+    <div class="row g-0 shadow rounded-4 overflow-hidden">
       <div class="col-md-8 d-flex align-items-center">
-        <div class="card-body  text-start px-4 py-3">
-          <h2 class="card-title my-3">Rex </h2>
-          <p class="card-text">
-            Rex es un perro valiente, protector y muy inteligente. Ideal para quienes buscan un compañero fiel y activo. 
-            Le gusta aprender nuevos trucos, disfruta del ejercicio al aire libre y siempre está atento a su entorno. 
-            Con cariño y entrenamiento, se convierte en un amigo inseparable.
-          </p>
-
-          <!-- Botón "Saber más" centrado -->
-          <div class="text-center">
-            <a href="#" class="btn btn-primary btn-lg"> Adoptar a Rex</a>
-          </div>
+        <div class="card-body px-4 py-3">
+          <h2 class="card-title">Rex</h2>
+          <p class="card-text text-muted">Rex es un perro valiente, protector e inteligente. Disfruta del ejercicio al
+            aire libre y siempre está atento a su entorno.</p>
+          <div class="text-center"><a href="#" class="btn btn-primary btn-lg">Adoptar a Rex</a></div>
         </div>
       </div>
-
-      <!-- Imagen de la tarjeta (más pequeña) -->
       <div class="col-md-4">
-        <img src="./img/aleman.jpg" class="img-fluid rounded-start" alt="Golden Retriever" />
+        <img src="./img/aleman.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Pastor Alemán">
       </div>
     </div>
-  </div>
+  </section>
 
-  <footer>
-    <div class="container-fluid bg-primary-subtle p-5 text-center">
-      <div class="row">
-        <div class="col"> <a href="#" class="text-decoration-none text-dark"> ADOPTA</a></div>
-        <div class="col"> <a href="#" class="text-decoration-none text-dark"> SEDES</a></div>
-        <div class="col"> <a href="#" class="text-decoration-none text-dark"> FOTOS</a></div>
-        <div class="col"> <a href="#" class="text-decoration-none text-dark"> CONTACTO</a></div>
-      </div>
-    </div>
+  <!-- Footer -->
+  <footer class="bg-primary-subtle text-dark text-center mt-auto py-4">
+    <p class="mb-0">© 2025 Huellitas Felices | Todos los derechos reservados 🐾</p>
   </footer>
 
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
